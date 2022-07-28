@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    color:black;
+    border: none;
+}
+
+input, label {
+    display: block;
+    width: 100%;
+}
+
+input:focus, label:focus {
+outline: none;
+}
+
+a{
+    color:dodgerblue;
+}
+
+body{
+    padding-top: 5vh; /* view height -> 5% da tela */
+    background-image: url(../images/fundo1.JPEG);
+    background-size: cover;
+    background-position-y: -150px;
+}
+/* form*/
+#login-container{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:whitesmoke;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+#login-container h1{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.6rem; /* adaptada ao elemento root */
+}
+
+form{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.full-box{
+    flex: 1 1 100%;
+    position: relative;
+}
+
+label{
+    font-weight:bold;
+    font-size:.8rem;
+}
+
+input{
+    background-color: whitesmoke;
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: .9rem;
+    margin-bottom: 40px;
+}
+
+input:focus{
+    border-color:dodgerblue;
+}
+
+input[type="submit"]{
+    background-color:dodgerblue;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    width: 100px;
+    cursor:pointer;
+}
+
+/* validações */
+.error-validation{
+    color:dodgerblue;
+    position:absolute;
+    top: 57px;
+    font-size: .8rem;
+}
+
+.template{
+    display: none;
+}
